@@ -11,7 +11,7 @@
 :root {
   /* Branding colors */
   --primary-color: #051650;
-  --primary-color-light: #05165038;
+  --primary-color-light: #05165015;
 
   /* Neutral colors */
   --neutral-950: #121212;
@@ -65,11 +65,11 @@ h2,
 h3 {
   font-family: "Montserrat";
   color: var(--neutral-950);
+  line-height: 1.2;
 }
 
 h1 {
   font-size: var(--font-size-h1);
-  line-height: 1.2;
 }
 
 h2 {
@@ -81,7 +81,7 @@ h3 {
   font-weight: 600;
 }
 
-h4 {
+/* h4 {
   font-size: var(--font-size-h4);
 }
 
@@ -91,7 +91,7 @@ h5 {
 
 h6 {
   font-size: var(--font-size-h6);
-}
+} */
 
 p {
   opacity: 0.95;
@@ -115,6 +115,7 @@ section {
   color: var(--primary-color);
   font-weight: bold;
   letter-spacing: 2%;
+  font-family: "Montserrat";
 }
 
 .button {
