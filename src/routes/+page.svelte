@@ -18,6 +18,11 @@
 <section>
   <h2>Onze services</h2>
   <div class="tiles-wrapper">
-    <Tile />
+    <Tile
+      subtitle="01/06"
+      heading="Dak- en dakdetailafdichtingen"
+      text="Naadloze en duurzame bescherming van daken en dakdetails."
+      link="/diensten/#dak-en-dakdetailafdichtingen"
+    />
   </div>
 </section>
