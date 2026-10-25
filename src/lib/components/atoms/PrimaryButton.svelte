@@ -2,24 +2,20 @@
   let { href, text } = $props();
 </script>
 
-<a {href} class="primary-button">
+<a {href} class="button primary">
   {text}
 </a>
 
 <style>
-  .primary-button {
+  .button.primary {
     background-color: var(--primary-color);
     color: var(--neutral-50);
-    border-radius: 50px;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: 0.3s;
-    font-weight: 600;
+    border: 1px solid var(--primary-color);
 
     &:hover {
-      scale: 0.95;
+      /* scale: 0.95; */
+      background-color: var(--neutral-50);
+      color: var(--primary-color);
     }
   }
 </style>

@@ -67,6 +67,7 @@ h3 {
 
 h1 {
   font-size: var(--font-size-h1);
+  line-height: 1.2;
 }
 
 h2 {
@@ -98,6 +99,21 @@ body {
   font-size: var(--font-size-p);
   font-family: "Open Sans";
   line-height: 1.5;
+}
+
+section {
+  padding: 0 var(--space-sides);
+}
+
+.button {
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+  font-weight: 600;
+  line-height: 1;
 }
 
 ul {
