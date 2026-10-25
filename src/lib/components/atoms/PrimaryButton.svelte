@@ -16,6 +16,7 @@
     display: inline-flex;
     align-items: center;
     transition: 0.3s;
+    font-weight: 600;
 
     &:hover {
       scale: 0.95;

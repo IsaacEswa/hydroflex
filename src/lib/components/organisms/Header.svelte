@@ -3,9 +3,11 @@
   import PrimaryButton from "../atoms/PrimaryButton.svelte";
 </script>
 
-<header class="header">
+<header>
   <div class="logo-wrapper">
-    <img src={logo} alt="Hydroflex logo" />
+    <a href="/">
+      <img src={logo} alt="Hydroflex logo" />
+    </a>
   </div>
 
   <div class="navigaton-wrapper">
@@ -101,6 +103,28 @@
 </header>
 
 <style>
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sides);
+
+    .logo-wrapper {
+      display: flex;
+
+      img {
+        max-width: 66%;
+      }
+    }
+
+    .navigaton-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-inner);
+    }
+  }
   #sidebar {
     padding-top: 1.15em;
     padding-bottom: 25px;
