@@ -99,3 +99,23 @@ body {
   font-family: "Open Sans";
   line-height: 1.5;
 }
+
+ul {
+  list-style: none;
+  line-height: 3;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  li {
+    transition: 0.3s;
+    &:hover {
+      scale: 0.95;
+      text-decoration: underline;
+      color: var(--neutral-950-hover);
+    }
+  }
+}
