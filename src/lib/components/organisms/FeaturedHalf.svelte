@@ -24,14 +24,6 @@
       display: flex;
       flex-direction: column;
       gap: var(--space-inner);
-
-      .subtitle {
-        font-size: 1.125rem;
-        text-transform: uppercase;
-        color: var(--primary-color);
-        font-weight: bold;
-        letter-spacing: 2%;
-      }
     }
   }
 </style>
