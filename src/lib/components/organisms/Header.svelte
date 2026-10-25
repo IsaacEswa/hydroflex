@@ -1,6 +1,7 @@
 <script>
   import logo from "#lib/assets/images/hydroflex-logo.svg";
   import PrimaryButton from "../atoms/PrimaryButton.svelte";
+  import MainNavigation from "../molecules/MainNavigation.svelte";
 </script>
 
 <header>
@@ -66,14 +67,7 @@
     </a>
 
     <div class="sidebar-container">
-      <section class="sidebar-col-01">
-        <ul class="main-navigation">
-          <li><a href="/">Home</a></li>
-          <li><a href="/over-ons">Over ons</a></li>
-          <li><a href="/diensten">Diensten</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </section>
+      <MainNavigation />
     </div>
   </nav>
 </header>
@@ -128,9 +122,5 @@
     &:target {
       transform: translateY(0);
     }
-  }
-
-  .main-navigation {
-    font-weight: 600;
   }
 </style>
