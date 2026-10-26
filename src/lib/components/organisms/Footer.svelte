@@ -34,5 +34,24 @@
     padding-top: var(--space-medium);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+
+    * {
+      color: var(--neutral-50);
+    }
+
+    .footer-col-01 {
+    }
+
+    .footer-col-02 {
+    }
+
+    .footer-col-03 {
+    }
+
+    .footer-col-04 {
+      ul {
+        list-style: url("/icons/check.svg") inside;
+      }
+    }
   }
 </style>

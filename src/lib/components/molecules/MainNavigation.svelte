@@ -10,5 +10,13 @@
 <style>
   .main-navigation {
     font-weight: 600;
+
+    li {
+      transition: 0.3s;
+      &:hover {
+        scale: 0.95;
+        text-decoration: underline;
+      }
+    }
   }
 </style>
