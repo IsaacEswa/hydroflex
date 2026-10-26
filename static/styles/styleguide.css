@@ -111,10 +111,20 @@ body::after {
   position: absolute;
   top: 0;
   right: 0;
-  width: 10rem;
-  height: 10rem;
+  width: 18.5rem;
+  height: 18.5rem;
   background: url("/icons/lines.svg") no-repeat top right / contain;
   pointer-events: none;
+
+  @media (min-width: 768px) {
+    width: 42rem;
+    height: 42rem;
+  }
+
+  @media (min-width: 1024px) {
+    width: 45rem;
+    height: 45rem;
+  }
 }
 
 main {
