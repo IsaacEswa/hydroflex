@@ -44,8 +44,4 @@
       }
     }
   }
-
-  svg:hover .tile {
-    background-color: var(--primary-color);
-  }
 </style>
