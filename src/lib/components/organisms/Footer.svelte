@@ -1,12 +1,12 @@
 <script>
-  import Whitelogo from "../atoms/Whitelogo.svelte";
-  import MainNavigation from "../molecules/MainNavigation.svelte";
+  import WhiteLogo from "#lib/components/atoms/WhiteLogo.svelte";
+  import MainNavigation from "#lib/components/molecules/MainNavigation.svelte";
 </script>
 
 <footer>
   <div class="footer-top">
     <section class="footer-col-01">
-      <Whitelogo />
+      <WhiteLogo />
     </section>
 
     <section class="footer-col-02">
