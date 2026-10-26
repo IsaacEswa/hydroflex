@@ -22,10 +22,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: var(--space-medium);
+    padding: var(--space-inner);
     text-align: center;
     position: relative;
     gap: var(--space-inner);
+
+    /* overflow-wrap: break-word;
+    hyphens: auto; */
 
     p {
       text-wrap: balance;
