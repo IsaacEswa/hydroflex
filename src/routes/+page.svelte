@@ -93,9 +93,13 @@
 
     .tiles-wrapper {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       grid-template-rows: auto;
       gap: var(--space-inner);
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
   }
 </style>
