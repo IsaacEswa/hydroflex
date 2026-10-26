@@ -1,14 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import adapter from '@sveltejs/adapter-netlify';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [
     sveltekit({
-      // Move your svelte.config.js options here, for example:
-      kit: {
-        adapter: adapter(),
-        // ...other kit options
-      }
+      adapter: adapter()
     })
   ]
 });
