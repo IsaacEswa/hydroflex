@@ -19,8 +19,14 @@
     <span class="subtitle">{subtitle}</span>
     <h1>{heading}</h1>
     <p>{@html text}</p>
-    <PrimaryButton href={primaryHref} text={primaryText} />
-    <SecondaryButton href={secondaryHref} text={secondaryText} />
+
+    {#if primaryHref && primaryText}
+      <PrimaryButton href={primaryHref} text={primaryText} />
+    {/if}
+
+    {#if secondaryHref && secondaryText}
+      <SecondaryButton href={secondaryHref} text={secondaryText} />
+    {/if}
   </div>
   <!-- <div class="image-side"></div> -->
 </section>

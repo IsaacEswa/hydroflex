@@ -74,10 +74,8 @@
         Met meer dan vijf jaar ervaring, erkende en gecertificeerde Triflex-verwerkers en hoogwaardige afdichtingssystemen staan wij voor vakmanschap, kwaliteit en een zorgvuldige uitvoering.
         <br><br>Neem contact met ons op voor deskundig advies of een vrijblijvende offerte.
       "
-  primaryHref="/diensten"
-  primaryText="Bekijk onze diensten"
-  secondaryHref="/contact"
-  secondaryText="Contact opnemen"
+  primaryHref="/contact"
+  primaryText="Contact opnemen"
   reverse
 />
 
