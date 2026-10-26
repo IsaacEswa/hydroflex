@@ -33,6 +33,16 @@
 
 <style>
   .featured-half {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    & > div {
+      width: 50%;
+    }
     .content-side {
       display: flex;
       flex-direction: column;
