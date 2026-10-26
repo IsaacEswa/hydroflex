@@ -61,3 +61,12 @@
     />
   </div>
 </section>
+
+<style>
+  .tiles-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--space-inner);
+  }
+</style>
