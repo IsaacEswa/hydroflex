@@ -11,30 +11,42 @@
     </div>
 
     <div class="navigaton-wrapper">
-      <PrimaryButton href="#" text="Contact" />
-      <a href="#sidebar" class="openmenu-button" title="Open menu">
-        <svg
-          width="30"
-          height="40"
-          viewBox="-3 -3 82 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1H75M1 17H53.4167"
-            stroke="#121212"
-            stroke-width="6"
-            stroke-linecap="round"
-          />
-          <path
-            d="M1 1H75M1 17H53.4167"
-            stroke="black"
-            stroke-opacity="0.2"
-            stroke-width="5"
-            stroke-linecap="round"
-          />
-        </svg>
-      </a>
+      <nav class="desktop-navigation">
+        <ul>
+          <li><a href="/over-ons">Over ons</a></li>
+          <li><a href="/diensten">Diensten</a></li>
+          <li>
+            <PrimaryButton href="#" text="Contact" />
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-navigation">
+        <PrimaryButton href="#" text="Contact" />
+        <a href="#sidebar" class="openmenu-button" title="Open menu">
+          <svg
+            width="30"
+            height="40"
+            viewBox="-3 -3 82 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1H75M1 17H53.4167"
+              stroke="#121212"
+              stroke-width="6"
+              stroke-linecap="round"
+            />
+            <path
+              d="M1 1H75M1 17H53.4167"
+              stroke="black"
+              stroke-opacity="0.2"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -92,6 +104,46 @@
         flex-direction: row;
         align-items: center;
         gap: var(--space-inner);
+
+        .desktop-navigation {
+          ul {
+            display: none;
+
+            @media (min-width: 768px) {
+              display: flex;
+              flex-direction: row;
+              gap: var(--space-sides);
+              font-weight: 600;
+            }
+
+            li {
+              transition: 0.3s;
+
+              &:hover {
+                text-decoration: underline;
+                color: var(--neutral-950-hover);
+                scale: 0.95;
+              }
+            }
+          }
+        }
+
+        .mobile-navigation {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: var(--space-inner);
+
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
+
+        .openmenu-button {
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -119,6 +171,10 @@
 
     &:target {
       transform: translateY(0);
+    }
+
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 </style>
