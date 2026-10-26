@@ -17,7 +17,7 @@
 <section class="featured-half" class:reverse>
   <div class="content-side">
     <span class="subtitle">{subtitle}</span>
-    <h1>{heading}</h1>
+    <h2>{heading}</h2>
     <p>{@html text}</p>
 
     {#if primaryHref && primaryText}

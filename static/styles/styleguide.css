@@ -105,6 +105,14 @@ body {
   line-height: 1.5;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sections);
+
+  padding: var(--space-medium) 0;
+}
+
 section {
   padding: 0 var(--space-sides);
 }
