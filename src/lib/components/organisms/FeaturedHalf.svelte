@@ -36,13 +36,14 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
+
+      & > div {
+        width: 50%;
+      }
     }
 
-    & > div {
-      width: 50%;
-    }
     .content-side {
       display: flex;
       flex-direction: column;
