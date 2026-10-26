@@ -31,9 +31,13 @@
 <style>
   footer {
     background-color: var(--neutral-950);
-    padding-top: var(--space-medium);
+    padding: var(--space-medium) 0;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-medium);
 
     * {
       color: var(--neutral-50);
@@ -46,6 +50,12 @@
     }
 
     .footer-col-03 {
+      a {
+        transition: 0.3s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .footer-col-04 {

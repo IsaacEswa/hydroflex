@@ -3,5 +3,7 @@
 </script>
 
 <a href="/">
-  <img src={logo} alt="Hydroflex logo" />
+  <h1>
+    <img src={logo} alt="Hydroflex logo" />
+  </h1>
 </a>
