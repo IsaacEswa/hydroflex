@@ -1,5 +1,5 @@
 <script>
-  import logo from "#lib/assets/images/hydroflex-logo.svg";
+  import Logo from "../atoms/Logo.svelte";
   import PrimaryButton from "../atoms/PrimaryButton.svelte";
   import MainNavigation from "../molecules/MainNavigation.svelte";
 </script>
@@ -7,9 +7,7 @@
 <header>
   <div class="header-wrapper">
     <div class="logo-wrapper">
-      <a href="/">
-        <img src={logo} alt="Hydroflex logo" />
-      </a>
+      <Logo />
     </div>
 
     <div class="navigaton-wrapper">
