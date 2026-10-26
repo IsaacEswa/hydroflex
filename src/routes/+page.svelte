@@ -2,6 +2,7 @@
   import FeaturedHalf from "#lib/components/organisms/FeaturedHalf.svelte";
   import Header from "#lib/components/organisms/Header.svelte";
   import Tile from "#lib/components/molecules/Tile.svelte";
+  import Footer from "#lib/components/organisms/Footer.svelte";
 </script>
 
 <Header />
@@ -78,6 +79,8 @@
   primaryText="Contact opnemen"
   reverse
 />
+
+<Footer />
 
 <style>
   .tiles-wrapper {
