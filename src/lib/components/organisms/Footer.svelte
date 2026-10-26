@@ -41,15 +41,18 @@
       color: var(--neutral-50);
     }
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
     .footer-top {
       display: flex;
       flex-direction: column;
       gap: var(--space-medium);
 
       margin-bottom: var(--space-medium);
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       .footer-col-01 {
       }
 
@@ -68,7 +71,34 @@
 
     .footer-bottom {
       ul {
-        list-style: url("/icons/check.svg") inside;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: 1024px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: var(--space-inner);
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        @media (min-width: 768px) {
+          line-height: 1.5;
+        }
+
+        &::before {
+          content: "";
+          flex-shrink: 0;
+          width: 1.5em;
+          height: 1.5em;
+          background: url("/icons/check.svg") no-repeat center / contain;
+        }
       }
     }
   }
