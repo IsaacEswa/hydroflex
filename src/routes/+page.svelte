@@ -13,6 +13,10 @@
       Hydroflex beschermt bouwkundige en infrastructurele constructies met hoogwaardige
       afdichtings- en coatingsystemen van Triflex.
     "
+  primaryHref="/diensten"
+  primaryText="Bekijk onze diensten"
+  secondaryHref="/contact"
+  secondaryText="Contact opnemen"
 />
 
 <section>
@@ -61,6 +65,21 @@
     />
   </div>
 </section>
+
+<FeaturedHalf
+  subtitle="Hydroflex Specialistische Afdichtingen B.V"
+  heading="Uw project, onze expertise"
+  text="
+        Of het nu gaat om nieuwbouw, renovatie of specialistisch herstelwerk: Hydroflex denkt met u mee over een passende afdichtingsoplossing. <br><br>
+        Met meer dan vijf jaar ervaring, erkende en gecertificeerde Triflex-verwerkers en hoogwaardige afdichtingssystemen staan wij voor vakmanschap, kwaliteit en een zorgvuldige uitvoering.
+        <br><br>Neem contact met ons op voor deskundig advies of een vrijblijvende offerte.
+      "
+  primaryHref="/diensten"
+  primaryText="Bekijk onze diensten"
+  secondaryHref="/contact"
+  secondaryText="Contact opnemen"
+  reverse
+/>
 
 <style>
   .tiles-wrapper {

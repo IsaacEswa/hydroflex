@@ -2,7 +2,16 @@
   import PrimaryButton from "../atoms/PrimaryButton.svelte";
   import SecondaryButton from "../atoms/SecondaryButton.svelte";
 
-  let { subtitle, heading, text, reverse = false } = $props();
+  let {
+    subtitle,
+    heading,
+    text,
+    primaryHref,
+    primaryText,
+    secondaryHref,
+    secondaryText,
+    reverse = false,
+  } = $props();
 </script>
 
 <section class="featured-half" class:reverse>
@@ -10,8 +19,8 @@
     <span class="subtitle">{subtitle}</span>
     <h1>{heading}</h1>
     <p>{@html text}</p>
-    <PrimaryButton href="/diensten" text="Bekijk onze diensten" />
-    <SecondaryButton href="/contact" text="Contact opnemen" />
+    <PrimaryButton href={primaryHref} text={primaryText} />
+    <SecondaryButton href={secondaryHref} text={secondaryText} />
   </div>
   <!-- <div class="image-side"></div> -->
 </section>
